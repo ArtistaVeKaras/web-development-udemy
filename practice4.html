@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+
+    <form>
+      <label for="first_name">First Name</label>
+      <input name="first"type="text" placeholder="Jonh" id="first_name" required />
+      <label for="last_name">Last Name</label>
+      <input name="last "type="password" placeholder="Smith" id="last_name" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+
+    <div>
+    <label for="male">Male</label>
+    <input id="Male" name="gender" type="radio" value="male"/>
+    <label for="female">Female</label>
+    <input id="Female" name="gender" type="radio" value="female"/>
+    <label for="other">Other</label>
+    <input type="radio" value="other"/>
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+    </div>
+
+    <div>
+    <label for="month">Birthday</label>
+    <select name="Month">
+        <option>Month</option>
+        <option>January</option>
+        <option>Febuary</option>
+        <option>March</option>
+        <option>April</option>
+    </select>
+
+    <select name="Day">
+        <option>Day</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
+    <select name="Year">
+        <option>Year</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2004</option>
+    </select>
+    </div>
+
+    <div>
+        <label for="">I agree to the terms and conditions</label>
+        <input type="radio">
+    </div>
+    <button>Submit</button>
+    </form>
+
+  </body>
+</html>
